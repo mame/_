@@ -1,7 +1,7 @@
 def __script__(src)
   code = []
   src = src.unpack("C*").map {|c| c.ord.to_s(6).rjust(3, "0").chars.to_a }
-  src.flatten.map {|n| n.to_i(6) + 1 }.each do |n|
+  src.flatten(1).map {|n| n.to_i(6) + 1 }.each do |n|
     code.empty? || code.last.size + n + 1 >= 60 ? code << "" : code.last << " "
     code.last << "_" * n
   end
