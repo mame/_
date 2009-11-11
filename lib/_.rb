@@ -14,7 +14,7 @@ def method_missing(mhd, *x)
     $code.concat($fragment.reverse)
     $fragment.clear
   end
-  $fragment << mhd.to_s.size - 1
+  $fragment << (mhd.to_s.size - 1).to_s
 end
 
 at_exit do
