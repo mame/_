@@ -31,7 +31,7 @@ None
 
 == INSTALL:
 
-* gem install mame-_
+* gem install _
 
 == LICENSE:
 
