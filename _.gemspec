@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "_"
-  spec.version       = "1.3"
+  spec.version       = "1.4"
   spec.authors       = ["Yusuke Endoh"]
   spec.email         = ["mame@ruby-lang.org"]
 
@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://github.com/mame/_"
   spec.license       = "MIT"
 
+  spec.files         = `git ls-files`.split($/)
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
